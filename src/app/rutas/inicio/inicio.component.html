@@ -1,1 +1,76 @@
-<p>inicio works!</p>
+
+<div class="row py-5">
+    <div class="col-8 border border-secondary rounded m-2 p-4">
+        <h3>Anuncios y Convocatorias</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="col border border border-secondary rounded m-2 p-4">
+        <h3>Tu Gobierno Informa</h3>
+        <img class="img-fluid" src="assets/img/TuGobiernoInforma.png" alt="">
+        <div class="border border secondary rounded p-3 my-2">
+            <h6>¡Trabajamos por los héroes del campo!</h6> <br>
+            <p style="font-size:12px ;">Hoy el #CréditoDeLasOportunidades es una realidad, para que nuestros productores y las mujeres rurales,
+                como Gladys, tengan mayor estabilidad para producir y aportar a la reactivación del Ecuador.
+            </p>
+            <p style="font-weight: bold; font-size: 12px;"><i style="font-size: 20px;" class="bi bi-tag"></i> !#Juntos Cumplimos!</p>
+            <div class="row">
+                <div class="col p-0">
+                    <img height="30px" width="30px" src="assets/img/escudoEcuador.jpg" alt="Logo escudo Ecuador">
+                </div>
+                <div class="col-9 p-1">
+                    <p class="m-0" style="font-weight: bold;font-size: 10px;">Secretaría General de Comunicación Ecuador  </p>
+                    <p class="text-muted m-0" style="font-size: 10px;">12.800 suscriptores</p>
+                </div>
+                <div class="col p-0">
+                    <i style="font-size: 15px;" class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col m-2 p-4 border rounded border-secondary">
+        <h3>Servicios</h3>
+        <div class="row justify-content-center ">
+            <div class="col-5  m-3 border border-secondary text-center" *ngFor="let carta of cartas; let i = index" >
+                <i [ngClass]="carta.icono"></i>
+                <nav>{{carta.nombre}}</nav>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col m-2 p-4 border rounded border-secondary">
+        <h3>Noticias destacadas</h3>
+        <div class="border border-secondary p-2 my-2" *ngFor="let noticia of noticias; let i = index">
+            <h5>{{noticia.titulo}}</h5>
+            <p class="text-end m-0"><i>{{noticia.fechaHora}}</i></p>
+        </div>
+        <div class="text-center my-3">
+            <button class="btn btn-primary text-center">Leer más noticias</button>
+        </div>
+    </div>
+</div>
+

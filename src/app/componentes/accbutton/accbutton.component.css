@@ -1,0 +1,13 @@
+.btn-acc{
+    position: fixed ;
+    z-index: 1;
+    margin: 80px 10px;
+    font-size: 12px;
+}
+.btn-acc button{
+    background-color:#f4e738;
+    border-radius: 100%;
+    color: black;
+    border: 0;
+    
+}

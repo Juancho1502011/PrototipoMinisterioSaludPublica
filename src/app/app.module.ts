@@ -7,6 +7,7 @@ import { InicioComponent } from './rutas/inicio/inicio.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { AccbuttonComponent } from './componentes/accbutton/accbutton.component';
+import { ContactoComponent } from './rutas/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AccbuttonComponent } from './componentes/accbutton/accbutton.component'
     InicioComponent,
     NavbarComponent,
     FooterComponent,
-    AccbuttonComponent
+    AccbuttonComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

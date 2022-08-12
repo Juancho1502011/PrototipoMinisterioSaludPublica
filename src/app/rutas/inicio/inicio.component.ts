@@ -17,17 +17,17 @@ export class InicioComponent implements OnInit {
 
   cartas = [
     {nombre: 'Dirección Nacional de Discapacidades',
-    icono:'bi bi-snapchat'},
+    icono:'fa-solid fa-wheelchair'},
     {nombre: 'Salud en cifras',
-    icono:''},
+    icono:'fa-solid fa-book-medical'},
     {nombre: 'Certificado de vacunación',
-    icono:''},
+    icono:'fa-solid fa-file-lines'},
     {nombre: 'Fijación de Medicamentos',
-    icono:''},
+    icono:'fa-solid fa-capsules'},
     {nombre: 'Biblioteca virtual de salud',
-    icono:''},
-    {nombre: 'Otro',
-    icono:''},
+    icono:'fa-solid fa-book-medical'},
+    {nombre: 'Otros',
+    icono:'fa-solid fa-ellipsis'},
   ]
 
   @Input()

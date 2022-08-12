@@ -1,3 +1,11 @@
 div button{
     text-align: center;
 }
+.servicio{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.servicio:hover{
+    color: white;
+    background-color: #136888;
+    cursor: pointer;
+}

@@ -8,27 +8,27 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav my-2 me-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active py-3" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link py-3 text-white" [ngClass]="{'active': url==='/inicio'}" aria-current="page" routerLink="/inicio" >Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link py-3 text-white" href="#">Ministerio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link py-3 text-white" href="#">Servicios</a>
+                    <a class="nav-link py-3 text-white"  href="#">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link py-3 text-white" href="#">Biblioteca</a>
+                    <a class="nav-link py-3 text-white"  href="#">Biblioteca</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link py-3 text-white" href="#">Noticias</a>
+                    <a class="nav-link py-3 text-white" [ngClass]="{'active': url==='/noticias'}" href="#">Noticias</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-3 text-white" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle py-3 text-white" [ngClass]="{'active': url==='/contacto'}"  href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Gobierno
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/contacto">Contacto</a></li>
+                        <li><a class="dropdown-item" routerLink="/contacto" >Contacto</a></li>
                         <li><a class="dropdown-item" href="#">Biblioteca</a></li>
                         <li><a class="dropdown-item" href="#">Programas</a></li>
                         <li><a class="dropdown-item" href="#">Transparencia</a></li>

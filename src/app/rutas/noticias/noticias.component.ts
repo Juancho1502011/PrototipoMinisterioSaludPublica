@@ -16,17 +16,17 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/noticia1.png',
+      imagen: 'assets/img/noticia1.png',
     },
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/noticia1.png',
+      imagen: 'assets/img/noticia1.png',
     },
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/noticia1.png',
+      imagen: 'assets/img/noticia1.png',
     },
   ];  
 
@@ -34,27 +34,27 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/reciente1.png',
+      imagen: 'assets/img/reciente1.png',
     },
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/reciente1.png',
+      imagen: 'assets/img/reciente1.png',
     },
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/reciente1.png',
+      imagen: 'assets/img/reciente1.png',
     },
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/reciente1.png',
+      imagen: 'assets/img/reciente1.png',
     },
     {
       titulo: 'Noticia 1',
       fechaHora: '2020-10-10 10:10:10',
-      imagen: '/assets/img/reciente1.png',
+      imagen: 'assets/img/reciente1.png',
     },
   ];  
 

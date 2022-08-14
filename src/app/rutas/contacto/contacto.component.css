@@ -11,3 +11,7 @@
     width:100%;
     position:absolute;
     }
+.aviso{
+    color: red;
+    display: inline;
+}

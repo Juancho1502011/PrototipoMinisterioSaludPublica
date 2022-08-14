@@ -1,6 +1,6 @@
 
-<div class="row py-5">
-    <div class="col-8 border border-secondary rounded m-2 p-4">
+<div class="row justify-content-center py-5">
+    <div class="col-lg-8 border border-secondary rounded m-2 p-4">
         <h3 class="mb-3 mx-2">Anuncios y Convocatorias</h3>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -10,13 +10,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="...">
+                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="Descarga tu certificado de vacunación COVID-19">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="...">
+                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="Descarga tu certificado de vacunación COVID-19">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="...">
+                <img src="assets/img/img1.jpeg" class="d-block w-100" alt="Descarga tu certificado de vacunación COVID-19">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -29,9 +29,9 @@
             </button>
           </div>
     </div>
-    <div class="col border border border-secondary rounded m-2 p-4">
+    <div class="col-lg border border border-secondary rounded m-2 p-4">
         <h3 class="mb-3 mx-2">Tu Gobierno Informa</h3>
-        <img class="img-fluid" src="assets/img/TuGobiernoInforma.png" alt="">
+        <img class="img-fluid" src="assets/img/TuGobiernoInforma.png" alt="$700 Millones asignados a infraestructura educativa">
         <div class="border border secondary rounded p-3 my-2">
             <h6>¡Trabajamos por los héroes del campo!</h6> <br>
             <p style="font-size:12px ;">Hoy el #CréditoDeLasOportunidades es una realidad, para que nuestros productores y las mujeres rurales,
@@ -52,17 +52,17 @@
             </div>
         </div>
     </div>
-    <div class="col m-2 p-4 border rounded border-secondary">
+    <div class="col-lg m-2 p-4 border rounded border-secondary">
         <h3 class="mb-3 mx-2">Servicios</h3>
         <div class="row justify-content-center ">
-            <div class="servicio col-5 p-4  m-3 border  border-secondary text-center" style="height: 110px;" *ngFor="let carta of cartas; let i = index" >
+            <div class="servicio col-5 p-4  m-3 border  border-secondary text-center" *ngFor="let carta of cartas; let i = index" >
                 <i style="font-size: 30px;" [ngClass]="carta.icono"></i>
                 <nav>{{carta.nombre}}</nav>
             </div>
         </div>
         
     </div>
-    <div class="col m-2 p-4 border rounded border-secondary">
+    <div class="col-lg m-2 p-4 border rounded border-secondary">
         <h3 class="mb-3 mx-2">Noticias destacadas</h3>
         <div class="border border-secondary p-2 my-2" *ngFor="let noticia of noticias; let i = index">
             <p class="m-0"><b>{{noticia.titulo}}</b></p>

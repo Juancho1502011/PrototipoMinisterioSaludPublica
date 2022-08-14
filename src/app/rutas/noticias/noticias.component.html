@@ -1,0 +1,45 @@
+<h1 class="text-center my-4">Noticias</h1>
+<div class="row  mb-4">
+    <div class="col-8">
+        <div class="rounded border border-secondary m-2 p-4">
+            <h3 class="mb-3 mx-2">Destacados</h3>
+            <div class="row border border-secondary my-1" *ngFor="let destacado of destacados; let i = index">
+                <div class="col-auto m-2">
+                    <img class="img-fluid" [src]="destacado.imagen" alt="">
+                </div>
+                <div class="col align-self-center">
+                    <nav class="mb-3" style="font-weight: bold;">{{destacado.titulo}}</nav>
+                    <nav><i>{{destacado.fechaHora}}</i></nav>
+                </div>
+            </div>
+        </div>
+        <div class="rounded border border-secondary m-2 p-4" style="overflow-y: scroll;height: 350px;">
+            <h3 class="mb-3 mx-2">Recientes</h3>
+            <div class="row border border-secondary my-1" *ngFor="let reciente of recientes; let i = index">
+                <div class="col-auto m-2">
+                    <img class="img-fluid" [src]="reciente.imagen" alt="">
+                </div>
+                <div class="col align-self-center">
+                    <nav><i>{{reciente.fechaHora}}</i></nav>
+                    <nav style="font-weight: bold;">{{reciente.titulo}}</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="rounded border border-secondary m-2 p-4">
+            <h3 class="mx-2 text-center">Comunicados</h3>
+            <ngx-twitter-timeline [data]="{sourceType: 'url', url: 'https://twitter.com/Salud_Ec'}"
+                [opts]="{tweetLimit: 1}"></ngx-twitter-timeline>
+            <h3 class="my-3 mx-2 text-center">Vistos recientemente</h3>
+            <div class="px-3" *ngFor="let visto of vistos; let i = index">
+                <nav style="font-weight: bold; font-size: 13px;">
+                    {{visto}}
+                </nav>
+                <hr *ngIf="i!==vistos.length-1">
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -5,7 +5,7 @@
     font-size: 12px;
 }
 .btn-acc button{
-    background-color:#f4e738;
+    background-color:#f4e738 !important;
     border-radius: 100%;
     color: black;
     border: 0;

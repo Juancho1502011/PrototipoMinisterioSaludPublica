@@ -8,6 +8,8 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { AccbuttonComponent } from './componentes/accbutton/accbutton.component';
 import { ContactoComponent } from './rutas/contacto/contacto.component';
+import { NoticiasComponent } from './rutas/noticias/noticias.component';
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ContactoComponent } from './rutas/contacto/contacto.component';
     NavbarComponent,
     FooterComponent,
     AccbuttonComponent,
-    ContactoComponent
+    ContactoComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    NgxTwitterTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

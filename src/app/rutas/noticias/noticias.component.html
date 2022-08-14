@@ -5,7 +5,7 @@
             <h3 class="mb-3 mx-2">Destacados</h3>
             <div class="row border border-secondary my-1" *ngFor="let destacado of destacados; let i = index">
                 <div class="col-auto m-2">
-                    <img class="img-fluid" [src]="destacado.imagen" alt="">
+                    <img class="img-fluid" src='{{destacado.imagen}}' alt="">
                 </div>
                 <div class="col align-self-center">
                     <nav class="mb-3" style="font-weight: bold;">{{destacado.titulo}}</nav>

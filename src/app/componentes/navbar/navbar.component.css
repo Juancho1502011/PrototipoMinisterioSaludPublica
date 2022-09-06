@@ -1,8 +1,13 @@
 .navbar{
-    background-image: url('https://www.salud.gob.ec/wp-content/themes/Sitio-32/oraculo/imagen_header/151.jpeg');
+    /*background-image: url('https://www.salud.gob.ec/wp-content/themes/Sitio-32/oraculo/imagen_header/151.jpeg');*/
+    background-color: #20ade3;
     background-attachment: fixed;
     background-position: left ;
 }
 .active {
-    background: rgba(0, 0, 0, 0.4);
+    background: #68bbed;
+}
+
+.nav-item a{
+    font-weight: bold;
 }

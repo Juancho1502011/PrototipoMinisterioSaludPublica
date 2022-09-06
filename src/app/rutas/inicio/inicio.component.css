@@ -10,3 +10,7 @@ div button{
     background-color: #136888;
     cursor: pointer;
 }
+
+.visually-hidden{
+    background-color: #136888 !important;
+}

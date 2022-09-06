@@ -1,7 +1,7 @@
 
 <div class="row justify-content-center py-5">
     <div class="col-lg-8 border border-secondary rounded m-2 p-4">
-        <h3 class="mb-3 mx-2">Anuncios y Convocatorias</h3>
+        <h1 class="mb-3 mx-2">Anuncios y Convocatorias</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -20,53 +20,53 @@
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
     </div>
     <div class="col-lg border border border-secondary rounded m-2 p-4">
-        <h3 class="mb-3 mx-2">Tu Gobierno Informa</h3>
+        <h1 class="mb-3 mx-2">Tu Gobierno Informa</h1>
         <img class="img-fluid" src="assets/img/TuGobiernoInforma.png" alt="$700 Millones asignados a infraestructura educativa">
         <div class="border border secondary rounded p-3 my-2">
-            <h6>¡Trabajamos por los héroes del campo!</h6> <br>
+            <h1>¡Trabajamos por los héroes del campo!</h1> <br>
             <p style="font-size:12px ;">Hoy el #CréditoDeLasOportunidades es una realidad, para que nuestros productores y las mujeres rurales,
                 como Gladys, tengan mayor estabilidad para producir y aportar a la reactivación del Ecuador.
             </p>
-            <p style="font-weight: bold; font-size: 12px;"><i style="font-size: 20px;" class="bi bi-tag"></i> !#Juntos Cumplimos!</p>
+            <p style="font-weight: bold; font-size: 12px;"><em style="font-size: 20px;" class="bi bi-tag"></em> !#Juntos Cumplimos!</p>
             <div class="row">
                 <div class="col p-0">
                     <img height="30px" width="30px" src="assets/img/escudoEcuador.jpg" alt="Logo escudo Ecuador">
                 </div>
                 <div class="col-9 p-1">
-                    <p class="m-0" style="font-weight: bold;font-size: 10px;">Secretaría General de Comunicación Ecuador  </p>
-                    <p class="text-muted m-0" style="font-size: 10px;">12.800 suscriptores</p>
+                    <p class="m-0" style="font-weight: bold;font-size: 11px;">Secretaría General de Comunicación Ecuador  </p>
+                    <p class="text-muted m-0" style="font-size: 11px;">12.800 suscriptores</p>
                 </div>
                 <div class="col p-0">
-                    <i style="font-size: 15px;" class="bi bi-box-arrow-up-right"></i>
+                    <em style="font-size: 15px;" class="bi bi-box-arrow-up-right"></em>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-lg m-2 p-4 border rounded border-secondary">
-        <h3 class="mb-3 mx-2">Servicios</h3>
+        <h1 class="mb-3 mx-2">Servicios</h1>
         <div class="row justify-content-center ">
             <div class="servicio col-5 p-4  m-3 border  border-secondary text-center" *ngFor="let carta of cartas; let i = index" >
-                <i style="font-size: 30px;" [ngClass]="carta.icono"></i>
+                <em style="font-size: 30px;" [ngClass]="carta.icono"></em>
                 <nav>{{carta.nombre}}</nav>
             </div>
         </div>
         
     </div>
     <div class="col-lg m-2 p-4 border rounded border-secondary">
-        <h3 class="mb-3 mx-2">Noticias destacadas</h3>
+        <h1 class="mb-3 mx-2">Noticias destacadas</h1>
         <div class="border border-secondary p-2 my-2" *ngFor="let noticia of noticias; let i = index">
-            <p class="m-0"><b>{{noticia.titulo}}</b></p>
-            <p class="text-end m-0"><i>{{noticia.fechaHora}}</i></p>
+            <p class="m-0"><strong>{{noticia.titulo}}</strong></p>
+            <p class="text-end m-0"><em>{{noticia.fechaHora}}</em></p>
         </div>
         <div class="text-center my-3">
             <button class="btn btn-primary text-center">Leer más noticias</button>

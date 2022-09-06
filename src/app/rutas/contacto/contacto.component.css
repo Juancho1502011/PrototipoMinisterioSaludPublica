@@ -1,17 +1,20 @@
-.map{
-    overflow:hidden;
-    padding-bottom:80%;
-    position:relative;
-    height:0;
-    }
-.map iframe{
-    left:0;
-    top:0;
+.map {
+    overflow: hidden;
+    padding-bottom: 80%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
     height: 450px;
-    width:100%;
-    position:absolute;
-    }
-.aviso{
+    width: 100%;
+    position: absolute;
+}
+
+.aviso {
     color: red;
     display: inline;
+    background-color: white;
 }

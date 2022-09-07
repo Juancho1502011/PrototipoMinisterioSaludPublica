@@ -30,21 +30,21 @@
           </div>
     </div>
     <div class="col-lg border border border-secondary rounded m-2 p-4">
-        <h1 class="mb-3 mx-2">Tu Gobierno Informa</h1>
-        <img class="img-fluid" src="assets/img/TuGobiernoInforma.png" alt="$700 Millones asignados a infraestructura educativa">
+        <h1 class="mb-3 mx-2" tabindex="0">Tu Gobierno Informa</h1>
+        <img class="img-fluid" tabindex="0" src="assets/img/TuGobiernoInforma.png" alt="$700 Millones asignados a infraestructura educativa">
         <div class="border border secondary rounded p-3 my-2">
-            <h1>¡Trabajamos por los héroes del campo!</h1> <br>
-            <p style="font-size:12px ;">Hoy el #CréditoDeLasOportunidades es una realidad, para que nuestros productores y las mujeres rurales,
+            <h1 tabindex="0">¡Trabajamos por los héroes del campo!</h1> <br>
+            <p tabindex="0" style="font-size:12px ;">Hoy el #CréditoDeLasOportunidades es una realidad, para que nuestros productores y las mujeres rurales,
                 como Gladys, tengan mayor estabilidad para producir y aportar a la reactivación del Ecuador.
             </p>
-            <p style="font-weight: bold; font-size: 12px;"><em style="font-size: 20px;" class="bi bi-tag"></em> !#Juntos Cumplimos!</p>
+            <p tabindex="0" style="font-weight: bold; font-size: 12px;"><em style="font-size: 20px;" class="bi bi-tag"></em> !#Juntos Cumplimos!</p>
             <div class="row">
                 <div class="col p-0">
                     <img height="30px" width="30px" src="assets/img/escudoEcuador.jpg" alt="Logo escudo Ecuador">
                 </div>
                 <div class="col-9 p-1">
-                    <p class="m-0" style="font-weight: bold;font-size: 11px;">Secretaría General de Comunicación Ecuador  </p>
-                    <p class="text-muted m-0" style="font-size: 11px;">12.800 suscriptores</p>
+                    <p class="m-0" tabindex="0" style="font-weight: bold;font-size: 11px;">Secretaría General de Comunicación Ecuador  </p>
+                    <p class="text-muted m-0" style="font-size: 11px;" tabindex="0">12.800 suscriptores</p>
                 </div>
                 <div class="col p-0">
                     <em style="font-size: 15px;" class="bi bi-box-arrow-up-right"></em>
@@ -52,10 +52,10 @@
             </div>
         </div>
     </div>
-    <div class="col-lg m-2 p-4 border rounded border-secondary">
-        <h1 class="mb-3 mx-2">Servicios</h1>
+    <div class="col-lg m-2 p-4 border rounded border-secondary ">
+        <h1 class="mb-3 mx-2" tabindex="0">Servicios</h1>
         <div class="row justify-content-center ">
-            <div class="servicio col-5 p-4  m-3 border  border-secondary text-center" *ngFor="let carta of cartas; let i = index" >
+            <div tabindex="0" class="servicio col-5 p-4  m-3 border  border-secondary text-center" *ngFor="let carta of cartas; let i = index" >
                 <em style="font-size: 30px;" [ngClass]="carta.icono"></em>
                 <nav>{{carta.nombre}}</nav>
             </div>
@@ -63,10 +63,10 @@
         
     </div>
     <div class="col-lg m-2 p-4 border rounded border-secondary">
-        <h1 class="mb-3 mx-2">Noticias destacadas</h1>
+        <h1 tabindex="0" class="mb-3 mx-2">Noticias destacadas</h1>
         <div class="border border-secondary p-2 my-2" *ngFor="let noticia of noticias; let i = index">
-            <p class="m-0"><strong>{{noticia.titulo}}</strong></p>
-            <p class="text-end m-0"><em>{{noticia.fechaHora}}</em></p>
+            <p class="m-0" tabindex="0"><strong>{{noticia.titulo}}</strong></p>
+            <p class="text-end m-0" tabindex="0"><em>{{noticia.fechaHora}}</em></p>
         </div>
         <div class="text-center my-3">
             <button class="btn btn-primary text-center">Leer más noticias</button>
